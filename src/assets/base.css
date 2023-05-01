@@ -70,7 +70,9 @@ select{
 /* ------------ */
 
 /* Set up the body */
-
+#app{
+  display: flex;
+}
 body{
   line-height: 1.5;
   min-height: 100vh;
@@ -93,9 +95,31 @@ body{
 }
 
 .container{
-  padding-inline: 2em;
-  margin-inline: auto;
-  max-width: 80rem;
+ min-width:100%;
+ padding: 0 2.5em;
+}
+.wrapper{
+  align-items: center;
+  height: 100vh;
+}
+.content-container{
+  padding-inline: 4em;
+  min-width: 100vh;
+}
+.marquee{
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100;
+  line-height: 1.5em;
+  align-items: center;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 2em  repeat(1, minmax(0, 80rem)) 2em;
+}
+
+.grid-container > *:first-child{
+  grid-column: 2;
 }
 
 .sr-only{
@@ -116,3 +140,15 @@ body{
   padding: 3rem;
 }
 
+nav{
+  height: 5em;
+}
+
+.wrapper{
+  display: flex;
+  height: 100%;
+}
+
+.marquee span:nth-last-child(1) {
+  background: red;
+} 
