@@ -27,7 +27,7 @@ import TheWelcome from '../components/TheWelcome.vue'
 <div class="wrapper">
   <div class="lft side-bar">
   <ul class="social-icons">
-    <li class="logo">
+    <!-- <li class="logo">
       <a href="#" class="social-link">
         <span class="link-text logo-text">Fireship</span>
         <svg
@@ -54,7 +54,7 @@ import TheWelcome from '../components/TheWelcome.vue'
           </g>
         </svg>
       </a>
-    </li>
+    </li> -->
   
     <li class="social-item">
       <a href="#" class="social-link">
@@ -210,7 +210,7 @@ import TheWelcome from '../components/TheWelcome.vue'
       </div>
     <div class="rgt side-bar">
   <ul class="social-icons myemail">
-    <a>geraldingraham@icloud.com</a>
+    <a href="mailto:geraldingraham@icloud.com">geraldingraham@icloud.com</a>
   </ul>
 </div>
 </div>

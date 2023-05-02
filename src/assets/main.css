@@ -180,7 +180,8 @@ body{
     transform: translateX(100%);
     transition: transform 350ms ease-out;
     padding: min(30vh,  10rem) 2em !important;
-    background:#000000 !important;
+    background: hsl(0 0% 100% / 0.1);
+  backdrop-filter:blur(1rem);
     --gap:0em !important;
   }
   .primary-navigation[data-visible= true ]{
@@ -213,13 +214,13 @@ body{
   list-style: none;
   margin: 0;
   background: hsl(0 0% 100% / 0.1);
-  backdrop-filter:bluer(1rem);
+  backdrop-filter:blur(1rem);
   z-index: 4;
 }
 @supports(backdrop-filter: blur(1rem)){
   .primary-navigation{
     background: hsl(0 0% 100% / 0.1);
-    backdrop-filter:bluer(1rem);
+    backdrop-filter:blur(1rem);
   }
 }
 .primary-navigation a {
@@ -290,6 +291,14 @@ body{
   position: sticky;
   top: 40vh;
   align-self: flex-start; /* <-- this is the fix */
+  
+}
+.lft{
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  background: hsl(0 0% 100% / 0.1);
+  backdrop-filter:blur(1rem);
 }
 .rgt{
   height: 50vh;
@@ -299,10 +308,12 @@ body{
 }
 .social-icons{
   list-style-type: none;
+  padding-inline:0;
 }
 .myemail a{
   writing-mode: vertical-rl;text-orientation: mixed;
   color: white;
+  text-decoration: none;
 }
 .social-link {
   display: flex;
@@ -332,11 +343,11 @@ body{
 }
 
 .fa-primary {
-  color: #ff7eee;
+  color: #aebaff;
 }
 
 .fa-secondary {
-  color: #df49a6;
+  color: #aebaff;
 }
 
 .fa-primary,
