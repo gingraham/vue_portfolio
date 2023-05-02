@@ -98,13 +98,9 @@ body{
  min-width:100%;
  padding: 0 2.5em;
 }
-.wrapper{
-  align-items: center;
-  height: 100vh;
-}
+
 .content-container{
   padding-inline: 4em;
-  min-width: 100vh;
 }
 .marquee{
   display: flex;
@@ -146,7 +142,6 @@ nav{
 
 .wrapper{
   display: flex;
-  height: 100%;
 }
 
 .marquee span:nth-last-child(1) {

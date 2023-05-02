@@ -5,18 +5,20 @@ import TheWelcome from '../components/TheWelcome.vue'
 <template>
   <div class="container">
     <header class="primary-header flex">
+      <button  class="mobile-nav-toggle" @click="toggleNav" :data-visible="isVisible"><span class="sr-only">Menu</span>
+      </button>
       <!-- navigation -->
       <nav>
-        <ul class="primary-navigation underline-indicators flex" style="min-height: 0;">
+        <ul id="primary-navigation" :data-visible="isVisible" class="primary-navigation underline-indicators flex" style="min-height: 0;">
           <li class="active"><a href="#" class="uppercase text-white letter-spacing-2"><span aria-hidden="true">00.</span>
               Home</a></li>
           <li><a href="#" class="uppercase text-white letter-spacing-2"><span aria-hidden="true">01.</span> About</a></li>
           <li><a href="#" class="uppercase text-white letter-spacing-2"><span aria-hidden="true">02.</span> Web</a></li>
           <li><a href="#" class="uppercase text-white letter-spacing-2"><span aria-hidden="true">03.</span> Games</a></li>
           <li>
-           <button class="nav-button">
+           <!-- <button class="nav-button">
         resume
-            </button>
+            </button> -->
           </li>
         </ul>
       </nav>
@@ -172,27 +174,27 @@ import TheWelcome from '../components/TheWelcome.vue'
   </ul>
 </div>
       <div class="content-container">
-        <div class="content">
+        <div class="content marquee">
           <h1 class="text-accent fs-500 ff-sans-cond">
          Hello, <br>
           <span>I'm</span> <span class="text-white fs-800 ff-sans-cond" style="font-weight: 600;">Gerald Ingraham</span> <span>and</span><br>
           <span class="text-accent fs-700 ff-sans-cond" style="font-weight: 600;">I build digital marketing technology.</span><br><br>
-          <span class="text-accent fs-400 ff-sans-normal">
-            I'm a software engineer that specializes in building sites, applications and emails that increase ROI. I'm an ambasador for diversity and inclusion in tech and a lover of all things game related.
+          <span class="text-accent fs-400 ff-sans-normal blurb">
+          
           </span>
         </h1>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p class="blurb">
+          I'm a software engineer that specializes in building sites, applications and emails that increase ROI. I'm an ambasador for diversity and inclusion in tech and a lover of all things game related.
+        </p>
+        <button>
+          Get an Email
+        </button>
+        <br><br><br>
         </div>
         <div class="content">
-          <h1 class="text-accent fs-500 ff-sans-cond">
-         Hello, <br>
-          <span>I'm</span> <span class="text-white fs-800 ff-sans-cond" style="font-weight: 600;">Gerald Ingraham</span> <span>and</span><br>
-          <span class="text-accent fs-700 ff-sans-cond" style="font-weight: 600;">I build digital marketing technology.</span><br><br>
-          <span class="text-accent fs-400 ff-sans-normal">
-            I'm a software engineer that specializes in building sites, applications and emails that increase ROI. I'm an ambasador for diversity and inclusion in tech and a lover of all things game related.
-          </span>
+          <h1 class="text-white fs-800 ff-sans-cond" style="font-weight: 600;"> GAME STUFF
         </h1>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque debitis voluptatem dolorem suscipit consequuntur ea, labore corrupti laborum sit nobis dolores sed nemo facere reiciendis, beatae fugiat deleniti veniam? Doloribus, necessitatibus alias. Eligendi similique exercitationem dignissimos esse possimus? Saepe iste aperiam temporibus voluptas beatae quam optio fugit velit praesentium aliquam neque cum voluptate totam, blanditiis modi, expedita deserunt eos animi.</p>
         </div>
         <div class="content">
           <h1 class="text-accent fs-500 ff-sans-cond">
@@ -207,10 +209,26 @@ import TheWelcome from '../components/TheWelcome.vue'
         </div>
       </div>
     <div class="rgt side-bar">
-  <ul class="social-icons">
-    <li></li>
+  <ul class="social-icons myemail">
+    <a>geraldingraham@icloud.com</a>
   </ul>
 </div>
 </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isVisible: false
+    }
+  },
+  methods: {
+    toggleNav() {
+      console.log("hello")
+      this.isVisible = !this.isVisible
+    }
+  }
+}
+</script>
