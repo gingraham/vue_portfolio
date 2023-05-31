@@ -1,5 +1,8 @@
 <script setup>
 import TheWelcome from '../components/TheWelcome.vue'
+import EmailSlider from '../components/EmailSlider.vue'
+import LogoSlider from '../components/LogoSlider.vue';
+import ProjectsCard from '../components/ProjectsCard.vue'
 </script>
 
 <template>
@@ -55,120 +58,27 @@ import TheWelcome from '../components/TheWelcome.vue'
         </svg>
       </a>
     </li> -->
-  
     <li class="social-item">
       <a href="#" class="social-link">
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fad"
-          data-icon="cat"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-          class="svg-inline--fa fa-cat fa-w-16 fa-9x"
-        >
-          <g class="fa-group">
-            <path
-              fill="currentColor"
-              d="M448 96h-64l-64-64v134.4a96 96 0 0 0 192 0V32zm-72 80a16 16 0 1 1 16-16 16 16 0 0 1-16 16zm80 0a16 16 0 1 1 16-16 16 16 0 0 1-16 16zm-165.41 16a204.07 204.07 0 0 0-34.59 2.89V272l-43.15-64.73a183.93 183.93 0 0 0-44.37 26.17L192 304l-60.94-30.47L128 272v-80a96.1 96.1 0 0 0-96-96 32 32 0 0 0 0 64 32 32 0 0 1 32 32v256a64.06 64.06 0 0 0 64 64h176a16 16 0 0 0 16-16v-16a32 32 0 0 0-32-32h-32l128-96v144a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16V289.86a126.78 126.78 0 0 1-32 4.54c-61.81 0-113.52-44.05-125.41-102.4z"
-              class="fa-secondary"
-            ></path>
-            <path
-              fill="currentColor"
-              d="M376 144a16 16 0 1 0 16 16 16 16 0 0 0-16-16zm80 0a16 16 0 1 0 16 16 16 16 0 0 0-16-16zM131.06 273.53L192 304l-23.52-70.56a192.06 192.06 0 0 0-37.42 40.09zM256 272v-77.11a198.62 198.62 0 0 0-43.15 12.38z"
-              class="fa-primary"
-            ></path>
-          </g>
-        </svg>
-        <span class="link-text">Cats</span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,1.05078c-0.2175,0 -0.43414,0.06898 -0.61914,0.20898l-23,17.95117c-0.43,0.34 -0.50992,0.9682 -0.16992,1.4082c0.34,0.43 0.9682,0.50992 1.4082,0.16992l1.38086,-1.07812v26.28906c0,0.55 0.45,1 1,1h14v-18h12v18h14c0.55,0 1,-0.45 1,-1v-26.28906l1.38086,1.07812c0.19,0.14 0.39914,0.21094 0.61914,0.21094c0.3,0 0.58906,-0.13086 0.78906,-0.38086c0.34,-0.44 0.26008,-1.0682 -0.16992,-1.4082l-23,-17.95117c-0.185,-0.14 -0.40164,-0.20898 -0.61914,-0.20898zM35,5v1.05078l6,4.67969v-5.73047z"></path></g></g></svg>
+      </a>
+    </li>
+    <li class="social-item">
+      <a href="#" class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z"></path></g></g></svg>
+        
       </a>
     </li>
   
     <li class="social-item">
       <a href="#" class="social-link">
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fad"
-          data-icon="alien-monster"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 576 512"
-          class="svg-inline--fa fa-alien-monster fa-w-18 fa-9x"
-        >
-          <g class="fa-group">
-            <path
-              fill="currentColor"
-              d="M560,128H528a15.99954,15.99954,0,0,0-16,16v80H480V176a15.99954,15.99954,0,0,0-16-16H416V96h48a16.00079,16.00079,0,0,0,16-16V48a15.99954,15.99954,0,0,0-16-16H432a15.99954,15.99954,0,0,0-16,16V64H368a15.99954,15.99954,0,0,0-16,16v48H224V80a15.99954,15.99954,0,0,0-16-16H160V48a15.99954,15.99954,0,0,0-16-16H112A15.99954,15.99954,0,0,0,96,48V80a16.00079,16.00079,0,0,0,16,16h48v64H112a15.99954,15.99954,0,0,0-16,16v48H64V144a15.99954,15.99954,0,0,0-16-16H16A15.99954,15.99954,0,0,0,0,144V272a16.00079,16.00079,0,0,0,16,16H64v80a16.00079,16.00079,0,0,0,16,16h48v80a16.00079,16.00079,0,0,0,16,16h96a16.00079,16.00079,0,0,0,16-16V432a15.99954,15.99954,0,0,0-16-16H192V384H384v32H336a15.99954,15.99954,0,0,0-16,16v32a16.00079,16.00079,0,0,0,16,16h96a16.00079,16.00079,0,0,0,16-16V384h48a16.00079,16.00079,0,0,0,16-16V288h48a16.00079,16.00079,0,0,0,16-16V144A15.99954,15.99954,0,0,0,560,128ZM224,320H160V224h64Zm192,0H352V224h64Z"
-              class="fa-secondary"
-            ></path>
-            <path
-              fill="currentColor"
-              d="M160,320h64V224H160Zm192-96v96h64V224Z"
-              class="fa-primary"
-            ></path>
-          </g>
-        </svg>
-        <span class="link-text">Aliens</span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,4l-21,13.34375v15.30859l21,13.34766l21,-13.34375v-15.3125zM25,29.18359l-5.93359,-4.11328l5.93359,-4.04687l5.93359,4.04688zM27,17.60547v-7.65625l13.42969,8.53516l-6.01953,4.17188zM23,17.60547l-7.41016,5.05078l-6.01953,-4.17187l13.42969,-8.53516zM12.09375,25.04297l-4.09375,2.78906v-5.62891zM15.57031,27.45313l7.42969,5.15234v7.44531l-13.41016,-8.52344zM27,32.60547l7.42969,-5.15234l5.98047,4.07422l-13.41016,8.52344zM37.90625,25.04297l4.09375,-2.83984v5.62891z"></path></g></g></svg>
       </a>
     </li>
-  
+
     <li class="social-item">
       <a href="#" class="social-link">
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fad"
-          data-icon="space-station-moon-alt"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-          class="svg-inline--fa fa-space-station-moon-alt fa-w-16 fa-5x"
-        >
-          <g class="fa-group">
-            <path
-              fill="currentColor"
-              d="M501.70312,224H448V160H368V96h48V66.67383A246.86934,246.86934,0,0,0,256,8C119.03125,8,8,119.0332,8,256a250.017,250.017,0,0,0,1.72656,28.26562C81.19531,306.76953,165.47656,320,256,320s174.80469-13.23047,246.27344-35.73438A250.017,250.017,0,0,0,504,256,248.44936,248.44936,0,0,0,501.70312,224ZM192,240a80,80,0,1,1,80-80A80.00021,80.00021,0,0,1,192,240ZM384,343.13867A940.33806,940.33806,0,0,1,256,352c-87.34375,0-168.71094-11.46094-239.28906-31.73633C45.05859,426.01953,141.29688,504,256,504a247.45808,247.45808,0,0,0,192-91.0918V384H384Z"
-              class="fa-secondary"
-            ></path>
-            <path
-              fill="currentColor"
-              d="M256,320c-90.52344,0-174.80469-13.23047-246.27344-35.73438a246.11376,246.11376,0,0,0,6.98438,35.998C87.28906,340.53906,168.65625,352,256,352s168.71094-11.46094,239.28906-31.73633a246.11376,246.11376,0,0,0,6.98438-35.998C430.80469,306.76953,346.52344,320,256,320Zm-64-80a80,80,0,1,0-80-80A80.00021,80.00021,0,0,0,192,240Zm0-104a24,24,0,1,1-24,24A23.99993,23.99993,0,0,1,192,136Z"
-              class="fa-primary"
-            ></path>
-          </g>
-        </svg>
-        <span class="link-text">Space</span>
-      </a>
-    </li>
-  
-    <li class="social-item">
-      <a href="#" class="social-link">
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fad"
-          data-icon="space-shuttle"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 640 512"
-          class="svg-inline--fa fa-space-shuttle fa-w-20 fa-5x"
-        >
-          <g class="fa-group">
-            <path
-              fill="currentColor"
-              d="M32 416c0 35.35 21.49 64 48 64h16V352H32zm154.54-232h280.13L376 168C243 140.59 222.45 51.22 128 34.65V160h18.34a45.62 45.62 0 0 1 40.2 24zM32 96v64h64V32H80c-26.51 0-48 28.65-48 64zm114.34 256H128v125.35C222.45 460.78 243 371.41 376 344l90.67-16H186.54a45.62 45.62 0 0 1-40.2 24z"
-              class="fa-secondary"
-            ></path>
-            <path
-              fill="currentColor"
-              d="M592.6 208.24C559.73 192.84 515.78 184 472 184H186.54a45.62 45.62 0 0 0-40.2-24H32c-23.2 0-32 10-32 24v144c0 14 8.82 24 32 24h114.34a45.62 45.62 0 0 0 40.2-24H472c43.78 0 87.73-8.84 120.6-24.24C622.28 289.84 640 272 640 256s-17.72-33.84-47.4-47.76zM488 296a8 8 0 0 1-8-8v-64a8 8 0 0 1 8-8c31.91 0 31.94 80 0 80z"
-              class="fa-primary"
-            ></path>
-          </g>
-        </svg>
-        <span class="link-text">Shuttle</span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="60px" height="60px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.627,0 -12,5.373 -12,12c0,5.623 3.872,10.328 9.092,11.63c-0.056,-0.162 -0.092,-0.35 -0.092,-0.583v-2.051c-0.487,0 -1.303,0 -1.508,0c-0.821,0 -1.551,-0.353 -1.905,-1.009c-0.393,-0.729 -0.461,-1.844 -1.435,-2.526c-0.289,-0.227 -0.069,-0.486 0.264,-0.451c0.615,0.174 1.125,0.596 1.605,1.222c0.478,0.627 0.703,0.769 1.596,0.769c0.433,0 1.081,-0.025 1.691,-0.121c0.328,-0.833 0.895,-1.6 1.588,-1.962c-3.996,-0.411 -5.903,-2.399 -5.903,-5.098c0,-1.162 0.495,-2.286 1.336,-3.233c-0.276,-0.94 -0.623,-2.857 0.106,-3.587c1.798,0 2.885,1.166 3.146,1.481c0.896,-0.307 1.88,-0.481 2.914,-0.481c1.036,0 2.024,0.174 2.922,0.483c0.258,-0.313 1.346,-1.483 3.148,-1.483c0.732,0.731 0.381,2.656 0.102,3.594c0.836,0.945 1.328,2.066 1.328,3.226c0,2.697 -1.904,4.684 -5.894,5.097c1.098,0.573 1.899,2.183 1.899,3.396v2.734c0,0.104 -0.023,0.179 -0.035,0.268c4.676,-1.639 8.035,-6.079 8.035,-11.315c0,-6.627 -5.373,-12 -12,-12z"></path></g></g></svg>
       </a>
     </li>
   </ul>
@@ -191,22 +101,48 @@ import TheWelcome from '../components/TheWelcome.vue'
         </button>
         <br><br><br>
         </div>
-        <div class="content">
-          <h1 class="text-white fs-800 ff-sans-cond" style="font-weight: 600;"> GAME STUFF
+        <div class="content email">
+         <div class="content-header">
+          <h1 class="text-white fs-800 ff-sans-cond" style="font-weight: 600;"> EMAIL STUFF
         </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque debitis voluptatem dolorem suscipit consequuntur ea, labore corrupti laborum sit nobis dolores sed nemo facere reiciendis, beatae fugiat deleniti veniam? Doloribus, necessitatibus alias. Eligendi similique exercitationem dignissimos esse possimus? Saepe iste aperiam temporibus voluptas beatae quam optio fugit velit praesentium aliquam neque cum voluptate totam, blanditiis modi, expedita deserunt eos animi.</p>
+        <p>Some things I've built that live on the internet. Some for clients others for fun.</p>
+         </div>
+        <div class="emails">
+          <EmailSlider class="email-col"></EmailSlider>
+          <div class="email-col email-text">Some text that will be left aligned about my experience with emails. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus fuga, voluptates numquam repellendus atque quis.</div>
+        </div>
+        </div>
+
+        <div class="content">
+          <div class="content-header">
+          <h1 class="text-white fs-800 ff-sans-cond" style="font-weight: 600;"> WEB STUFF
+        </h1>
+        <p>Some things I've built that live on the internet. Some for clients others for fun.</p>
+         </div>
+         <ProjectsCard></ProjectsCard>
         </div>
         <div class="content">
-          <h1 class="text-accent fs-500 ff-sans-cond">
-         Hello, <br>
-          <span>I'm</span> <span class="text-white fs-800 ff-sans-cond" style="font-weight: 600;">Gerald Ingraham</span> <span>and</span><br>
-          <span class="text-accent fs-700 ff-sans-cond" style="font-weight: 600;">I build digital marketing technology.</span><br><br>
-          <span class="text-accent fs-400 ff-sans-normal">
-            I'm a software engineer that specializes in building sites, applications and emails that increase ROI. I'm an ambasador for diversity and inclusion in tech and a lover of all things game related.
-          </span>
+          <div class="content-header">
+          <h1 class="text-white fs-800 ff-sans-cond" style="font-weight: 600;"> ABOUT ME STUFF
         </h1>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>Some things I've built that live on the internet. Some for clients others for fun.</p>
+         </div>
+         <div class="email-col">Some text that will be left aligned about my experience with emails. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus fuga, voluptates numquam repellendus atque quis.</div>
+          <div class="email-col">Some text that will be left aligned about my experience with emails. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus fuga, voluptates numquam repellendus atque quis.</div>
         </div>
+        <footer class="footer">
+  <div class="container">
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
       </div>
     <div class="rgt side-bar">
   <ul class="social-icons myemail">
@@ -216,6 +152,44 @@ import TheWelcome from '../components/TheWelcome.vue'
 </div>
   </div>
 </template>
+<style>
+.footer {
+  color: white;
+  padding: 20px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-nav ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+</style>
 
 <script>
 export default {
@@ -229,6 +203,9 @@ export default {
       console.log("hello")
       this.isVisible = !this.isVisible
     }
+  },
+  components: {
+    EmailSlider
   }
 }
 </script>

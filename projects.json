@@ -1,0 +1,52 @@
+{
+    "ProjectsArray":[
+        {
+            "id": 1,
+            "Title": "Project one",
+            "About": "Lorem ipsum docoler and some more dummy text",
+            "Image" : "data/image:base64",
+            "Link1" : "https://fake-link.com",
+            "Category": "wordpress"
+        },
+        {
+            "id": 2,
+            "Title": "Project two",
+            "About": "Lorem ipsum docoler and some more dummy text",
+            "Image" : "data/image:base64",
+            "Link1" : "https://fake-link.com",
+            "Category": "contributed"
+        },
+        {
+            "id": 3,
+            "Title": "Project three",
+            "About": "Lorem ipsum docoler and some more dummy text",
+            "Image" : "data/image:base64",
+            "Link1" : "https://fake-link.com",
+            "Category": "htmlcss"
+        },
+        {
+            "id": 4,
+            "Title": "Project four",
+            "About": "Lorem ipsum docoler and some more dummy text",
+            "Image" : "data/image:base64",
+            "Link1" : "https://fake-link.com",
+            "Category": "wordpress"
+        },
+        {
+            "id": 5,
+            "Title": "Project five",
+            "About": "Lorem ipsum docoler and some more dummy text",
+            "Image" : "data/image:base64",
+            "Link1" : "https://fake-link.com",
+            "Category": "Fullstack"
+        },
+        {
+            "id": 6,
+            "Title": "Project six",
+            "About": "Lorem ipsum docoler and some more dummy text",
+            "Image" : "data/image:base64",
+            "Link1" : "https://fake-link.com",
+            "Category": "htmlcss"
+        }
+    ]
+}
