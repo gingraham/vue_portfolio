@@ -2,51 +2,51 @@
     "ProjectsArray":[
         {
             "id": 1,
-            "Title": "Project one",
-            "About": "Lorem ipsum docoler and some more dummy text",
-            "Image" : "data/image:base64",
-            "Link1" : "https://fake-link.com",
-            "Category": "wordpress"
+            "Title": "Cloud Nine Massage",
+            "About": "A client needed an update to there site.",
+            "Image" : "src/assets/images/cloud9_portfolio_600_388.jpg",
+            "Link1" : "https://www.cloudninechairmassage.com/",
+            "Category": "htmlcss"
         },
         {
             "id": 2,
-            "Title": "Project two",
-            "About": "Lorem ipsum docoler and some more dummy text",
-            "Image" : "data/image:base64",
-            "Link1" : "https://fake-link.com",
-            "Category": "contributed"
-        },
-        {
-            "id": 3,
-            "Title": "Project three",
-            "About": "Lorem ipsum docoler and some more dummy text",
-            "Image" : "data/image:base64",
-            "Link1" : "https://fake-link.com",
-            "Category": "htmlcss"
-        },
-        {
-            "id": 4,
-            "Title": "Project four",
-            "About": "Lorem ipsum docoler and some more dummy text",
-            "Image" : "data/image:base64",
-            "Link1" : "https://fake-link.com",
+            "Title": "Magnolia Park Kitchen",
+            "About": "Resturant in downtown San Rafael I'd stop in for lunch.",
+            "Image" : "src/assets/images/mpk_portfolio_600_366.jpg",
+            "Link1" : "https://magnoliaparkkitchen.com/",
             "Category": "wordpress"
         },
         {
-            "id": 5,
-            "Title": "Project five",
-            "About": "Lorem ipsum docoler and some more dummy text",
-            "Image" : "data/image:base64",
-            "Link1" : "https://fake-link.com",
-            "Category": "Fullstack"
+            "id": 3,
+            "Title": "You're Worth it",
+            "About": "A young man at 2K Games asked me for a site to help him sell his book.",
+            "Image" : "src/assets/images/your_worthit_portfolio_600_388.jpg",
+            "Link1" : "https://youreworthitbook.com/",
+            "Category": "wordpress"
         },
         {
-            "id": 6,
-            "Title": "Project six",
-            "About": "Lorem ipsum docoler and some more dummy text",
-            "Image" : "data/image:base64",
-            "Link1" : "https://fake-link.com",
-            "Category": "htmlcss"
+            "id": 4,
+            "Title": "Borderlands 3",
+            "About": "When they first let me help with web development",
+            "Image" : "src/assets/images/borderlands_portfolio_600_388.jpg",
+            "Link1" : "https://borderlands.com/",
+            "Category": "contributed"
+        },
+        {
+            "id": 4,
+            "Title": "2K23 PGA Tour",
+            "About": "PGA game website I helped build",
+            "Image" : "src/assets/images/pga_portfolio_600_355.jpg",
+            "Link1" : "https://pgatour.2k.com/",
+            "Category": "contributed"
+        },
+        {
+            "id": 4,
+            "Title": "2K23 NBA",
+            "About": "NBA game website I helped build and maintained.",
+            "Image" : "src/assets/images/nba_portfolio_600_367.jpg",
+            "Link1" : "https://nba.2k.com/",
+            "Category": "contributed"
         }
     ]
 }

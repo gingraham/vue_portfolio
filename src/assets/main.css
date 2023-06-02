@@ -192,7 +192,7 @@ body{
     display: block;
     z-index: 9999;
     background-color: transparent;
-    background: url("../assets/hamburger.png");
+    background: url("../assets/images/hamburger.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 2rem;
@@ -203,7 +203,7 @@ body{
   }
  
   .mobile-nav-toggle[data-visible= true ]{
-    background-image:  url("../assets/close-icon.png");
+    background-image:  url("../assets/images/close-icon.png");
   }
 }
 
@@ -264,7 +264,7 @@ body{
   margin-top: 6rem;
 }
 .content-header{
-  margin: 10rem 0rem 5rem 0rem;
+  margin: 4rem 0rem 3rem 0rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -288,7 +288,7 @@ body{
   border-radius: 5%;
 }
 .container{
-  background-image: url("../assets/dots_bg_fadetoblack.jpg");
+  background-image: url("../assets/images/dots_bg_fadetoblack.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -422,6 +422,25 @@ body{
   }
 }
 
+.column-layout{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  flex-basis: 100%;
+  width: 100%;
+}
+.profile{
+  width: 100%;
+}
+
+.col{
+  margin: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .col {
+    flex: 1
+  }
+}
 
 
 
