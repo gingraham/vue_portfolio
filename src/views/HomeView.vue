@@ -119,7 +119,7 @@ import ProjectsCard from '../components/ProjectsCard.vue'
         </h1>
         <p>Some things I've built that live on the internet. Some for clients others for fun.</p>
          </div>
-         <!-- <ProjectsCard></ProjectsCard> -->
+         <ProjectsCard></ProjectsCard>
         </div>
         <div class="content">
           <div class="content-header">
@@ -128,7 +128,7 @@ import ProjectsCard from '../components/ProjectsCard.vue'
         <p>Outlook sucks, but I build for it anyway.</p>
          </div>
          <div class="column-layout">
-          <div class="col">I do CRM! My expertise lies in creating responsive emails that combine cutting-edge design with flawless performance on various devices worldwide, because building good emails is hard. I'm proficient in building and maintaining websites and applications using Javascript or most recently the MEVN stack (MongoDB, Express.js, Vue.js, Node.js). This multifaceted experience allows me to bring a holistic perspective to front-end engineering, delivering cohesive and seamless digital experiences. 
+          <div class="col">I do <span class="text-accent fs-500 ff-sans-cond">CRM!</span> My expertise lies in creating responsive emails that combine cutting-edge design with flawless performance on various devices worldwide, because building good emails is hard. I'm proficient in building and maintaining websites and applications using <span class="text-accent fs-500 ff-sans-cond">Javascript</span> or most recently the MEVN stack (MongoDB, Express.js, Vue.js, Node.js). This multifaceted experience allows me to bring a holistic perspective to front-end engineering, delivering cohesive and seamless digital experiences. 
           </div>
           <div class="col"><img src="https://placehold.co/600x400/EEE/31343C" alt="" class="profile"></div>
          </div>
