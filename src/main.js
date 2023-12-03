@@ -1,13 +1,8 @@
+/* creates the vue instance, brings in the app.vue file and router linking them together. This is injested by the index.html file. */
+import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
-import { Carousel3d, Slide } from 'vue-carousel-3d';
-import './assets/main.css'
-
-const app = createApp(App)
-
-app.use(router)
-app.use(Carousel3d)
-app.mount('#app')
+import router from '@/router/index.js'
+    createApp(App).use(router).mount('#app')
 
 

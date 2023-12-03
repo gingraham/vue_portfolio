@@ -34,24 +34,31 @@
 .emails {
   display: flex;
   flex-wrap: wrap;
-  max-width: 60rem;
-  height: 80vh;
+  justify-content: space-between; /* Adjust this based on your design */
   align-items: flex-start;
-  padding: 30px 10px;
   font-family: "DM Sans", sans-serif;
   transition: background 0.4s ease-in;
+  height: 900px;
 }
 
+.content {
+  flex: 1; /* Allow the content to flex and take available space */
+  /* Other styles for content */
+}
 .email-col {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  
 }
 
-.email-text {
+/* .email-text {
   margin-top: 8em;
+} */
+.text{
+  background-color:hsl(0 0% 100% / 0.1);
+  padding: 2em;
 }
-
 @media only screen and (max-width: 768px) {
   .email-text {
     margin-top: 0;
@@ -66,6 +73,9 @@
   }
   .email-col {
     flex: 1;
+  }
+  .email-text {
+    margin-top: 5em; /* Adjust the value as needed */
   }
 }
 
@@ -82,7 +92,7 @@ input[type="radio"] {
 
 .card {
   position: absolute;
-  width: 60%;
+  width: 62%;
   height: 100%;
   left: 0;
   right: 0;
@@ -94,11 +104,12 @@ input[type="radio"] {
 .slider {
   width: 100%;
   height: 100%;
+  margin-bottom: 2em; 
   transform-style: preserve-3d;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 img {
