@@ -3,19 +3,20 @@ import EmailSlider from '../components/EmailSlider.vue';
 import LogoSlider from '../components/LogoSlider.vue';
 import ProjectsCard from '../components/ProjectsCard.vue';
 import Navbar from '../components/TheNavigation.vue';
+import mobileNav from '../components/NavigationMobile.vue'
 import Footer from '../components/TheFooter.vue';
 </script>
 
-<template >
+<template>
   <!-- site container -->
   <div class="container" id="home">
     <!-- mobile navigation icon -->
     <div id="navigation-icon" v-if="mobileView">
-    <i class="mobile-nav-toggle"></i>
+      <mobileNav />
     </div>
     <!-- Nav -->
     <Navbar v-if="!mobileView" />
-     <!-- Nav -->
+    <!-- Nav -->
 
     <!-- content wrapper -->
     <div class="wrapper">
@@ -200,63 +201,33 @@ import Footer from '../components/TheFooter.vue';
 export default {
   data() {
     return {
-      mobileView: false,
-      showNav: false,
-    }
+      mobileView: window.innerWidth <= 980,
+    };
   },
-
+  methods: {
+    handleResize() {
+      this.mobileView = window.innerWidth <= 980;
+    },
+  },
   components: {
     EmailSlider,
     Navbar,
-    Footer
-  }
-}
+    mobileNav,
+    Footer,
+  },
+  created() {
+    this.handleResize(); // Set the initial value
+    window.addEventListener("resize", this.handleResize); // Listen for window resize events
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.handleResize); // Remove the event listener when the component is destroyed
+  },
+};
 </script>
 
 <style>
-
-    .container {
-        padding: 0;
-    }
-
-    .content {
-        padding: 0 !important
-    }
-    /* Define the blurry background */
-    /* .primary-navigation {
-        position: fixed;
-        z-index: 10000;
-        inset: 0 0 0 30%;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 350ms ease-out;
-        padding: min(30vh, 10rem) 2em !important;
-        background: hsl(0 0% 100% / 0.1);
-        backdrop-filter: blur(1rem);
-        --gap: 0em !important;
-    } */
-    .mobile{
-        cursor: pointer;
-    }
-
-    .mobile-nav-toggle {
-        position: absolute;
-        display: block;
-        z-index: 9999;
-        background-color: transparent;
-        background: url("../assets/images/hamburger.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 2rem;
-        aspect-ratio: 1;
-        top: 2rem;
-        right: 2rem;
-        border: none;
-    }
-
-    /* .mobile-nav-toggle-close {
-        background-image: url("../assets/images/close-icon.png");
-        z-index: 11000;
-    } */
+.wrapper{
+  padding: 0 4em;
+}
 
 </style>

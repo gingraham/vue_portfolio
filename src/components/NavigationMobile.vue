@@ -1,9 +1,12 @@
 <template>
     <!-- navigation -->
     <header class="mobile-header flex" id="navbar">
+        <div id="navigation-icon" @click="toggleMobileNav">
+            <i class="mobile-nav-toggle" v-if="!showNav"></i>
+            <i class="mobile-nav-toggle-close" v-if="showNav"></i>
+        </div>
         <nav>
-            <ul id="mobile-navigation " class=" mobile-navigation underline-indicators flex"
-                style="min-height: 0;">
+            <ul id="mobile-navigation" :class="{ 'open': showNav }" class="mobile-navigation underline-indicators flex">
                 <li :class="{ active: activeItem === 'home' }">
                     <a @click="scroll('home')" class="uppercase text-white letter-spacing-2">
                         <span aria-hidden="true">00.</span>
@@ -43,6 +46,7 @@ export default {
         return {
             // Initially, you can set the activeItem to 'home' or any default value
             activeItem: 'home',
+            showNav: false, 
         };
     },
     methods:{
@@ -50,6 +54,9 @@ export default {
             this.activeItem = refName; 
             const element = document.getElementById(refName);
             element.scrollIntoView({behavior: "smooth"})
+        },
+        toggleMobileNav() {
+            this.showNav = !this.showNav;
         },
     }
     
@@ -63,8 +70,39 @@ export default {
     top: 0;
     width: 100%;
 }
+
+.container {
+        padding: 0;
+    }
+
+    .content {
+        padding: 0 !important
+    }
+
+/* Navbar icon */
+.mobile-nav-toggle,
+.mobile-nav-toggle-close {
+    display: block;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2rem;
+    aspect-ratio: 1;
+}
+
+.mobile-nav-toggle {
+    background-image: url("../assets/images/hamburger.png");
+    z-index: 11000;
+}
+
+.mobile-nav-toggle-close {
+    background-image: url("../assets/images/close-icon.png");
+    z-index: 99999;
+}
+
 /* Navbar with contents pushed to the right */
 .mobile-header {
+    cursor: pointer;
     justify-content: flex-end;
     flex-wrap: wrap;
     margin-top: 2em;
@@ -87,6 +125,7 @@ export default {
 .open{
     transform: translateX(0);
 }
+
 
 /* Link style and Hover effects */
 .mobile-navigation a {

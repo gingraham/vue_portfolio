@@ -72,6 +72,7 @@ export default {
     justify-content: flex-end;
     flex-wrap: wrap;
     margin-top: 2em;
+    margin-right: 6em;
     position: sticky;
     top: 0px;
 } 
@@ -86,13 +87,6 @@ export default {
     z-index: 4;
     padding-right: 40px;
 }
-
-/* Mobile navigation */
-
-
-
-
-
 
 
 /* Link style and Hover effects */
