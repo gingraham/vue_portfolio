@@ -55,12 +55,12 @@ export default {
 <style>
 
 
-/* 
+
 .footer-navigation {
     --gap: 2rem;
     --underline-gap: 1rem;
     list-style: none;
-    margin: 0;
+    margin-left: 4em;
     background: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(1rem);
     z-index: 4;
@@ -95,5 +95,5 @@ export default {
 
 .underline-indicators>.active {
     border-color: hsl(var(--clr-white) /1);
-} */
+}
 </style>

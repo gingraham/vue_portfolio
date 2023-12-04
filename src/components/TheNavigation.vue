@@ -1,6 +1,6 @@
 <template>
     <!-- navigation -->
-    <header class="primary-header flex" id="navbar">
+    <header class="primary-header flex sticky" id="navbar">
         <nav>
             <ul id="primary-navigation "  class=" primary-navigation underline-indicators flex"
                 style="min-height: 0;">
@@ -10,11 +10,11 @@
                         Home
                     </a>
                 </li>
-                <li :class="{ active: activeItem === 'projects' }">
+                <!-- <li :class="{ active: activeItem === 'projects' }">
                     <a @click="scroll('projects')" class="uppercase text-white letter-spacing-2">
                         <span aria-hidden="true">01.</span> Projects
                     </a>
-                </li>
+                </li> -->
                 <li :class="{ active: activeItem === 'email' }">
                     <a @click="scroll('email')" class="uppercase text-white letter-spacing-2">
                         <span aria-hidden="true">02.</span> Email
@@ -62,19 +62,20 @@ export default {
 <style>
 
 /* fixed position applied to navbar */
-.sticky {
+/* .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-}
+} */
 /* Navbar with contents pushed to the right */
 .primary-header {
     justify-content: flex-end;
     flex-wrap: wrap;
     margin-top: 2em;
     margin-right: 6em;
-    position: sticky;
+    position: absolute;
     top: 0px;
+    right: 0px;
 } 
     /* Navbar contents general styling and spacing */
 .primary-navigation {

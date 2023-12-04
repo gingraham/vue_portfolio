@@ -10,8 +10,8 @@ import Footer from '../components/TheFooter.vue';
 <template>
   <!-- site container -->
   <div class="container" id="home">
-    <!-- mobile navigation icon -->
-    <div id="navigation-icon" v-if="mobileView">
+       <!-- mobile navigation icon -->
+       <div id="navigation-icon" v-if="mobileView">
       <mobileNav />
     </div>
     <!-- Nav -->
@@ -20,11 +20,12 @@ import Footer from '../components/TheFooter.vue';
 
     <!-- content wrapper -->
     <div class="wrapper">
+     
       <!-- Left sidebar Nav -->
       <div class="lft side-bar">
         <ul class="social-icons">
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.apple.com/newsroom/2019/02/a-career-in-tech-built-with-coding-and-determination/" class="social-link">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
                 width="50px" height="50px" fill-rule="nonzero">
                 <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -115,6 +116,7 @@ import Footer from '../components/TheFooter.vue';
       <!-- End Left sidebar Nav -->
       <!-- site content  -->
       <div class="content-container">
+        
         <!-- Jumbotron header section -->
         <section class="content marquee">
           <h1 class="text-accent fs-500 ff-sans-cond">
@@ -190,7 +192,7 @@ import Footer from '../components/TheFooter.vue';
   <!--End Content wrapper -->
 
   <!-- Footer -->
-  <Footer />
+  <!-- <Footer /> -->
   <!-- End Footer -->
 </div>
 <!-- End site container -->
@@ -226,8 +228,5 @@ export default {
 </script>
 
 <style>
-.wrapper{
-  padding: 0 4em;
-}
 
 </style>

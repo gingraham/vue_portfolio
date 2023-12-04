@@ -134,15 +134,16 @@ body{
 
 
 
-/* .wrapper{
-  padding-top: 6rem;
-} */
+.wrapper{
+  display: flex;
+  max-width: 2000px;
+}
 .content-container{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-top: 5%;
-  
+  margin-top: 8%;
+  padding-inline: 10em;
 }
 
 .content{
@@ -181,6 +182,8 @@ body{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
 }
 
 /* About section styles */
@@ -204,9 +207,7 @@ body{
   margin-bottom: 1.40rem;
 }
 .rgt{
-  height: 50vh;
-  display: flex;
-  align-items: flex-end;
+  height: 180px;
   padding: 0 1.75em;
 }
 .social-icons{
@@ -218,6 +219,7 @@ body{
   writing-mode: vertical-rl;text-orientation: mixed;
   color: white;
   text-decoration: none;
+  margin-top: 8rem;
 }
 .social-link {
   display: flex;
@@ -341,6 +343,46 @@ body{
   .col {
     flex: 1
   }
+}
+
+/* Big screens */
+/* 
+
+@media screen and (max-width: 2800px) {
+.primary-header{  
+  margin-right:16em!important;
+}
+} */
+@media screen and (min-width: 2200px) {
+
+.primary-header{  
+  position: absolute;
+  margin-right:24vh!important;
+}
+}
+
+
+@media screen and (min-width: 2000px) {
+  .container {
+    max-width: 2000px;
+    padding: 0 5%;
+  }
+
+.content-container {
+  padding-inline: 14em;
+}
+
+}
+
+@media screen and (max-width: 1720px) {
+  .container {
+    padding: 0 3%;
+  }
+  .rgt{
+    height: 20vh !important;
+}
+
+
 }
 
 

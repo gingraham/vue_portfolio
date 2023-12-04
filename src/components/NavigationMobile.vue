@@ -2,35 +2,35 @@
     <!-- navigation -->
     <header class="mobile-header flex" id="navbar">
         <div id="navigation-icon" @click="toggleMobileNav">
-            <i class="mobile-nav-toggle" v-if="!showNav"></i>
+            <i class="mobile-nav-toggle" v-if="!showNav" :class="{'icon-active': !showNav}"></i>
             <i class="mobile-nav-toggle-close" v-if="showNav"></i>
         </div>
         <nav>
             <ul id="mobile-navigation" :class="{ 'open': showNav }" class="mobile-navigation underline-indicators flex">
                 <li :class="{ active: activeItem === 'home' }">
-                    <a @click="scroll('home')" class="uppercase text-white letter-spacing-2">
+                    <a @click="scroll('home'); closeMobileNav()" class="uppercase text-white letter-spacing-2">
                         <span aria-hidden="true">00.</span>
                         Home
                     </a>
                 </li>
-                <li :class="{ active: activeItem === 'projects' }">
-                    <a @click="scroll('projects')" class="uppercase text-white letter-spacing-2">
+                <!-- <li :class="{ active: activeItem === 'projects' }">
+                    <a @click="scroll('projects'); closeMobileNav()" class="uppercase text-white letter-spacing-2">
                         <span aria-hidden="true">01.</span> Projects
                     </a>
-                </li>
+                </li> -->
                 <li :class="{ active: activeItem === 'email' }">
-                    <a @click="scroll('email')" class="uppercase text-white letter-spacing-2">
+                    <a @click="scroll('email'); closeMobileNav()" class="uppercase text-white letter-spacing-2">
                         <span aria-hidden="true">02.</span> Email
                     </a>
                 </li>
                 <li :class="{ active: activeItem === 'web' }">
-                    <a @click="scroll('web')"  class="uppercase text-white letter-spacing-2">
+                    <a @click="scroll('web'); closeMobileNav()" class="uppercase text-white letter-spacing-2">
                         <span aria-hidden="true">03.</span>
                         Web
                     </a>
                 </li>
                 <li :class="{ active: activeItem === 'about' }">
-                    <a @click="scroll('about')"  class="uppercase text-white letter-spacing-2">
+                    <a @click="scroll('about'); closeMobileNav()" class="uppercase text-white letter-spacing-2">
                         <span aria-hidden="true">04.</span> About
                     </a>
                 </li>
@@ -44,23 +44,25 @@
 export default {
     data() {
         return {
-            // Initially, you can set the activeItem to 'home' or any default value
             activeItem: 'home',
-            showNav: false, 
+            showNav: false,
         };
     },
-    methods:{
-        scroll(refName){
-            this.activeItem = refName; 
+    methods: {
+        scroll(refName) {
+            this.activeItem = refName;
             const element = document.getElementById(refName);
-            element.scrollIntoView({behavior: "smooth"})
+            element.scrollIntoView({ behavior: "smooth" });
         },
         toggleMobileNav() {
             this.showNav = !this.showNav;
         },
-    }
-    
-}
+        closeMobileNav() {
+            // Close the mobile nav when a link is clicked
+            this.showNav = false;
+        },
+    },
+};
 </script>
 <style>
 
@@ -71,9 +73,6 @@ export default {
     width: 100%;
 }
 
-.container {
-        padding: 0;
-    }
 
     .content {
         padding: 0 !important
@@ -93,21 +92,25 @@ export default {
 .mobile-nav-toggle {
     background-image: url("../assets/images/hamburger.png");
     z-index: 11000;
+    transition: .8s ease all;
 }
 
 .mobile-nav-toggle-close {
     background-image: url("../assets/images/close-icon.png");
     z-index: 99999;
 }
-
+.icon-active{
+    transform: rotate(180deg);
+}
 /* Navbar with contents pushed to the right */
 .mobile-header {
     cursor: pointer;
     justify-content: flex-end;
     flex-wrap: wrap;
     margin-top: 2em;
-    position: sticky;
+    position: fixed;
     top: 0px;
+    right: 0px;
 } 
     /* Define the blurry background */
     .mobile-navigation {
