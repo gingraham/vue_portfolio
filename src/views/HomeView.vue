@@ -10,8 +10,8 @@ import Footer from '../components/TheFooter.vue';
 <template>
   <!-- site container -->
   <div class="container" id="home">
-       <!-- mobile navigation icon -->
-       <div id="navigation-icon" v-if="mobileView">
+    <!-- mobile navigation icon -->
+    <div id="navigation-icon" v-if="mobileView">
       <mobileNav />
     </div>
     <!-- Nav -->
@@ -20,12 +20,13 @@ import Footer from '../components/TheFooter.vue';
 
     <!-- content wrapper -->
     <div class="wrapper">
-     
+
       <!-- Left sidebar Nav -->
       <div class="lft side-bar">
         <ul class="social-icons">
           <li class="social-item">
-            <a href="https://www.apple.com/newsroom/2019/02/a-career-in-tech-built-with-coding-and-determination/" class="social-link">
+            <a href="https://www.apple.com/newsroom/2019/02/a-career-in-tech-built-with-coding-and-determination/"
+              class="social-link">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256"
                 width="50px" height="50px" fill-rule="nonzero">
                 <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
@@ -116,12 +117,13 @@ import Footer from '../components/TheFooter.vue';
       <!-- End Left sidebar Nav -->
       <!-- site content  -->
       <div class="content-container">
-        
+
         <!-- Jumbotron header section -->
         <section class="content marquee">
           <h1 class="text-accent fs-500 ff-sans-cond">
             Hello, <br>
-            <span>I'm</span> <span class="text-white fs-800 ff-sans-cond" style="font-weight: 600;">Gerald Ingraham</span>
+            <span>I'm</span> <span class="text-white fs-800 ff-sans-cond" style="font-weight: 600;">Gerald
+              Ingraham</span>
             <span> and</span><br>
             <span class="text-accent fs-700 ff-sans-cond" style="font-weight: 600;">I build digital marketing
               technology.</span><br><br>
@@ -142,72 +144,88 @@ import Footer from '../components/TheFooter.vue';
         <!-- Email section -->
 
         <section class="content email" id="email">
-        <div class="content-header">
-          <h1 class="text-white fs-800 ff-sans-cond" style="font-weight: 600;"> EMAIL STUFF
+          <div class="content-header">
+            <h1 class="text-white fs-800 ff-sans-cond" style="font-weight: 600;"> EMAIL STUFF
             </h1>
-            <p>I've built email templates that are responsive and render beautifully on any device. Give me a design and I
+            <p>I've built email templates that are responsive and render beautifully on any device. Give me a design and
+              I
               can make it happen and scalable.</p>
-        </div>
-        <div class="column-layout">
-          <div class="col">
-            <EmailSlider></EmailSlider>
           </div>
-        </div>
-      </section>
+          <div class="column-layout">
+            <div class="col">
+              <EmailSlider></EmailSlider>
+            </div>
+          </div>
+        </section>
         <!-- End Email section -->
         <!-- Web section -->
         <section class="content web" id="web">
-        <div class="content-header">
-          <h1 class="text-white fs-800 ff-sans-cond" style="font-weight: 600;"> WEB STUFF
-          </h1>
-          <p>Some things I've built that live on the internet. Some for clients others for fun.</p>
-        </div>
-        <ProjectsCard></ProjectsCard>
-      </section>
-      <!-- End Web section -->
-      <!-- About section -->
-      <section class="content about" id="about">
-        <div class="content-header">
-          <h1 class="text-white fs-800 ff-sans-cond" style="font-weight: 600;"> ABOUT ME STUFF
-          </h1>
-          <p>Bring the Pain Forward</p>
-        </div>
-        <div class="column-layout">
-          <div class="col about-content">I <span class="text-accent fs-300 ff-sans-cond">LOVE</span> a good challenge!  I'm a <span class="text-accent fs-300 ff-sans-cond">PASSIONATE</span> developer fluent in JavaScript, specializing in the MEVN stack (MongoDB, Express.js, Vue.js, Node.js). With a background in marketing, I bring a <span class="text-accent fs-300 ff-sans-cond">UNIQUE</span> perspective to front-end engineering, crafting seamless digital experiences. I also do <span class="text-accent fs-300 ff-sans-cond">CRM!</span> With expertise creating responsive emails that use AWS AmpScript for dynamic, personalized content. I excel in designing emails that look great on all devices, even handling the challenges of Outlook.
+          <div class="content-header">
+            <h1 class="text-white fs-800 ff-sans-cond" style="font-weight: 600;"> WEB STUFF
+            </h1>
+            <p>Some things I've built that live on the internet. Some for clients others for fun.</p>
           </div>
-          <div class="col"><img src="https://placehold.co/600x400/EEE/31343C" alt="" class="profile"></div>
-        </div>
-      </section>
-      <!-- End About section -->
+          <ProjectsCard></ProjectsCard>
+        </section>
+        <!-- End Web section -->
+        <!-- About section -->
+        <section class="content about" id="about">
+          <div class="content-header">
+            <h1 class="text-white fs-800 ff-sans-cond" style="font-weight: 600;"> ABOUT ME STUFF
+            </h1>
+            <p>Bring the Pain Forward</p>
+          </div>
+          <div class="column-layout">
+            <div class="col about-content">
+              <p>
+                I <span class="text-accent fs-300 ff-sans-cond">LOVE</span> a good challenge!
+                I'm a <span class="text-accent fs-300 ff-sans-cond">PASSIONATE</span> developer fluent in JavaScript,
+                specializing in the MEVN stack (MongoDB, Express.js, Vue.js, Node.js). With a background in marketing, I
+                bring a <span class="text-accent fs-300 ff-sans-cond">UNIQUE</span> perspective to front-end
+                engineering,
+                crafting seamless digital experiences. I also do <span
+                  class="text-accent fs-300 ff-sans-cond">CRM!</span>
+                With expertise creating responsive emails that use AWS AmpScript for dynamic, personalized content. I
+                excel in designing emails that look great on all devices, even handling the challenges of Outlook.
+              </p>
+            </div>
+            <div class="col"><img src="src/assets/images/myPortfolioPic.jpeg" alt="" class="profile"></div>
+          </div>
+        </section>
+        <!-- End About section -->
+        <a href="#" class="top">Up &#8593;</a>
+      </div>
+      <!--End site content  -->
+      <!-- right sidebar with email -->
+      <div class="rgt side-bar">
+        <ul class="social-icons myemail">
+          <a href="mailto:geraldingraham@icloud.com">geraldingraham@icloud.com</a>
+        </ul>
+      </div>
+      <!--End right sidebar with email -->
     </div>
-    <!--End site content  -->
-    <!-- right sidebar with email -->
-    <div class="rgt side-bar">
-      <ul class="social-icons myemail">
-        <a href="mailto:geraldingraham@icloud.com">geraldingraham@icloud.com</a>
-      </ul>
-    </div>
-    <!--End right sidebar with email -->
-  </div>
-  <!--End Content wrapper -->
+    <!--End Content wrapper -->
 
-  <!-- Footer -->
-  <!-- <Footer /> -->
-  <!-- End Footer -->
-</div>
-<!-- End site container -->
+    <!-- Footer -->
+
+    <!-- <Footer /> -->
+    <!-- End Footer -->
+  </div>
+  <!-- End site container -->
 </template>
 
 
 <script>
 export default {
-  data() {
+  data()
+  {
     return {
       mobileView: window.innerWidth <= 980,
     };
   },
   methods: {
-    handleResize() {
+    handleResize()
+    {
       this.mobileView = window.innerWidth <= 980;
     },
   },
@@ -217,16 +235,46 @@ export default {
     mobileNav,
     Footer,
   },
-  created() {
+  created()
+  {
     this.handleResize(); // Set the initial value
     window.addEventListener("resize", this.handleResize); // Listen for window resize events
   },
-  beforeDestroy() {
+  beforeDestroy()
+  {
     window.removeEventListener("resize", this.handleResize); // Remove the event listener when the component is destroyed
   },
 };
+
 </script>
 
 <style>
+.top {
 
+
+  position: sticky;
+  bottom: 20px;
+  margin-right: 14px;
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  background: hsl(0 0% 100% / 0.1);
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+p {
+  font-size: 25px;
+}
+
+/* remove the below if you don't want smooth scrolling */
+html,
+body {
+  scroll-behavior: smooth;
+}
 </style>

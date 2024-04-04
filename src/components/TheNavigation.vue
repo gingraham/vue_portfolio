@@ -85,7 +85,7 @@ export default {
     margin: 0;
     background: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(1rem);
-    z-index: 4;
+    z-index: 2147483647;
     padding-right: 40px;
 }
 

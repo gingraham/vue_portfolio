@@ -2,7 +2,7 @@
     <!-- navigation -->
     <header class="mobile-header flex" id="navbar">
         <div id="navigation-icon" @click="toggleMobileNav">
-            <i class="mobile-nav-toggle" v-if="!showNav" :class="{'icon-active': !showNav}"></i>
+            <i class="mobile-nav-toggle" v-if="!showNav" :class="{ 'icon-active': !showNav }"></i>
             <i class="mobile-nav-toggle-close" v-if="showNav"></i>
         </div>
         <nav>
@@ -42,22 +42,26 @@
 
 <script>
 export default {
-    data() {
+    data()
+    {
         return {
             activeItem: 'home',
             showNav: false,
         };
     },
     methods: {
-        scroll(refName) {
+        scroll(refName)
+        {
             this.activeItem = refName;
             const element = document.getElementById(refName);
             element.scrollIntoView({ behavior: "smooth" });
         },
-        toggleMobileNav() {
+        toggleMobileNav()
+        {
             this.showNav = !this.showNav;
         },
-        closeMobileNav() {
+        closeMobileNav()
+        {
             // Close the mobile nav when a link is clicked
             this.showNav = false;
         },
@@ -65,18 +69,13 @@ export default {
 };
 </script>
 <style>
-
 /* fixed position applied to navbar */
-.sticky {
+/* .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-}
+} */
 
-
-    .content {
-        padding: 0 !important
-    }
 
 /* Navbar icon */
 .mobile-nav-toggle,
@@ -99,9 +98,11 @@ export default {
     background-image: url("../assets/images/close-icon.png");
     z-index: 99999;
 }
-.icon-active{
+
+.icon-active {
     transform: rotate(180deg);
 }
+
 /* Navbar with contents pushed to the right */
 .mobile-header {
     cursor: pointer;
@@ -111,21 +112,23 @@ export default {
     position: fixed;
     top: 0px;
     right: 0px;
-} 
-    /* Define the blurry background */
-    .mobile-navigation {
-        position: fixed;
-        z-index: 10000;
-        inset: 0 0 0 30%;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: transform 350ms ease-out;
-        padding: min(30vh, 10rem) 2em !important;
-        background: hsl(0 0% 100% / 0.1);
-        backdrop-filter: blur(1rem);
-        --gap: 0em !important;
-    }
-.open{
+}
+
+/* Define the blurry background */
+.mobile-navigation {
+    position: fixed;
+    z-index: 10000;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+    padding: min(30vh, 10rem) 2em !important;
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+    --gap: 0em !important;
+}
+
+.open {
     transform: translateX(0);
 }
 

@@ -18,11 +18,11 @@
         },
         {
             "id": 3,
-            "Title": "You're Worth it",
-            "About": "A young man at 2K Games asked me for a site to help him sell his book.",
-            "Image" : "src/assets/images/your_worthit_portfolio_600_388.jpg",
-            "Link1" : "https://youreworthitbook.com/",
-            "Category": "wordpress"
+            "Title": "Lego Drive",
+            "About": "2K published Game. I was able to assist with the build and maintenance of the website.",
+            "Image" : "src/assets/images/lego_drive.png",
+            "Link1" : "https://lego.2k.com/drive/",
+            "Category": "contributed"
         },
         {
             "id": 4,
@@ -33,7 +33,7 @@
             "Category": "contributed"
         },
         {
-            "id": 4,
+            "id": 5,
             "Title": "2K23 PGA Tour",
             "About": "PGA game website I helped build",
             "Image" : "src/assets/images/pga_portfolio_600_355.jpg",
@@ -41,12 +41,28 @@
             "Category": "contributed"
         },
         {
-            "id": 4,
+            "id": 6,
             "Title": "2K23 NBA",
             "About": "NBA game website I helped build and maintained.",
             "Image" : "src/assets/images/nba_portfolio_600_367.jpg",
             "Link1" : "https://nba.2k.com/",
             "Category": "contributed"
+        },
+        {
+            "id": 7,
+            "Title": "Marvel's Midnight Suns",
+            "About": "Turned based game for Marvel I was proud to have contributed to the website.",
+            "Image" : "src/assets/images/marvel_midnight_suns.jpeg",
+            "Link1" : "https://midnightsuns.2k.com/",
+            "Category": "contributed"
+        },
+        {
+            "id": 8,
+            "Title": "International Space Station Tracker",
+            "About": "Just playing with API's",
+            "Image" : "src/assets/images/iss_screenshot.png",
+            "Link1" : "https://gingraham.github.io/ISS_Application/",
+            "Category": "htmlcss"
         }
     ]
 }

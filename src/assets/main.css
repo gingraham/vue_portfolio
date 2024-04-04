@@ -23,9 +23,10 @@
   --ff-sans-cond: "Barlow Condensed", sans-serif;
   --ff-sans-normal: "Barlow", sans-serif;
 }
+
 /* Body Set Up */
 
-body{
+body {
   line-height: 1.5;
   min-height: 100vh;
   font-family: var(--ff-sans-normal);
@@ -40,9 +41,11 @@ body{
 .bg-dark {
   background-color: hsl(var(--clr-dark));
 }
+
 .bg-accent {
   background-color: hsl(var(--clr-light));
 }
+
 .bg-white {
   background-color: hsl(var(--clr-white));
 }
@@ -50,9 +53,11 @@ body{
 .text-dark {
   color: hsl(var(--clr-dark));
 }
+
 .text-accent {
   color: hsl(var(--clr-light));
 }
+
 .text-white {
   color: hsl(var(--clr-white));
 }
@@ -62,9 +67,11 @@ body{
 .ff-serif {
   font-family: var(--ff-serif);
 }
+
 .ff-sans-cond {
   font-family: var(--ff-sans-cond);
 }
+
 .ff-sans-normal {
   font-family: var(--ff-sans-normal);
 }
@@ -72,9 +79,11 @@ body{
 .letter-spacing-1 {
   letter-spacing: 4.75px;
 }
+
 .letter-spacing-2 {
   letter-spacing: 2.7px;
 }
+
 .letter-spacing-3 {
   letter-spacing: 2.35px;
 }
@@ -86,24 +95,31 @@ body{
 .fs-900 {
   font-size: var(--fs-900);
 }
+
 .fs-800 {
   font-size: var(--fs-800);
 }
+
 .fs-700 {
   font-size: var(--fs-700);
 }
+
 .fs-600 {
   font-size: var(--fs-600);
 }
+
 .fs-500 {
   font-size: var(--fs-500);
 }
+
 .fs-400 {
   font-size: var(--fs-400);
 }
+
 .fs-300 {
   font-size: var(--fs-300);
 }
+
 .fs-200 {
   font-size: var(--fs-200);
 }
@@ -115,14 +131,14 @@ body{
   line-height: 1.1;
 }
 
-.numbered-title{
- font-family: var(--ff-sans-cond);
- font-size: var(--fs-500);
- text-transform: uppercase;
- letter-spacing: 4.72px;
+.numbered-title {
+  font-family: var(--ff-sans-cond);
+  font-size: var(--fs-500);
+  text-transform: uppercase;
+  letter-spacing: 4.72px;
 }
 
-.numbered-title span{
+.numbered-title span {
   margin-right: .5em;
   font-weight: 700;
   color: hsl(var(--clr-white) /.25);
@@ -134,11 +150,12 @@ body{
 
 
 
-.wrapper{
+.wrapper {
   display: flex;
   max-width: 2000px;
 }
-.content-container{
+
+.content-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -146,30 +163,46 @@ body{
   padding-inline: 10em;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 3em;
+  padding: 0 4em;
   margin-top: 6rem;
 }
-.content-header{
+
+.content-header {
   margin: 4rem 0rem 3rem 0rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 /* .marquee{
   padding-top:40px;
 
 } */
+.content {
+  position: relative;
+  isolation: isolate;
 
-.blurb{
+}
+
+.content::after {
+  content: ‘’;
+  background-image: linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5)), url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg");
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(-5deg);
+}
+
+.blurb {
   max-width: 500px;
 }
 
-.marquee button{
+.marquee button {
   margin-top: 4rem;
   padding: .5em 1em;
   background-color: transparent;
@@ -177,8 +210,9 @@ body{
   color: white;
   border-radius: 5%;
 }
-.container{
-  background-image: url("../assets/images/dots_bg_fadetoblack.jpg");
+
+.container {
+  background-image: linear-gradient(to right, rgb(0, 0, 0, 9), rgb(0, 0, 0, .5)), url("../assets/images/bg-pattern.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -187,40 +221,48 @@ body{
 }
 
 /* About section styles */
-.about-content{
+.about-content {
   margin-right: 5rem;
 }
 
-.side-bar{
-  position: -webkit-sticky; /* for Safari */
+.side-bar {
+  position: -webkit-sticky;
+  /* for Safari */
   position: sticky;
   top: 40vh;
-  align-self: flex-start; /* <-- this is the fix */
-  
+  align-self: flex-start;
+  /* <-- this is the fix */
+
 }
-.lft{
+
+.lft {
   /* height: 50vh; */
   display: flex;
   align-items: flex-end;
   background: hsl(0 0% 100% / 0.1);
-  backdrop-filter:blur(1rem);
+  backdrop-filter: blur(1rem);
   margin-bottom: 1.40rem;
 }
-.rgt{
+
+.rgt {
   height: 180px;
   padding: 0 1.75em;
 }
-.social-icons{
+
+.social-icons {
   list-style-type: none;
-  padding-inline:0;
+  padding-inline: 0;
 }
+
 /* right sidebar email link */
-.myemail a{
-  writing-mode: vertical-rl;text-orientation: mixed;
+.myemail a {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
   color: white;
   text-decoration: none;
   margin-top: 8rem;
 }
+
 .social-link {
   display: flex;
   align-items: center;
@@ -278,8 +320,7 @@ body{
   transition: var(--transition-speed);
 }
 
-.logo-text
-{
+.logo-text {
   display: inline;
   position: absolute;
   left: -999px;
@@ -292,12 +333,14 @@ body{
 
 /* Small screens */
 @media only screen and (max-width: 768px) {
-  .content-container{
+  .content-container {
     padding-inline: 1em;
   }
-  .side-bar{
+
+  .side-bar {
     display: none;
   }
+
   .socialbar {
     bottom: 0;
     width: 100vw;
@@ -319,23 +362,37 @@ body{
   main {
     margin: 0;
   }
-  .content-header{
+
+  .content-header {
     text-align: center;
   }
-  .about-content{
-    margin:0;
+
+  .about-content {
+    margin: 0;
     padding-bottom: 2rem;
   }
+
+  .emails {
+    height: 400px;
+    display: inline-block !important;
+  }
+
+  .web {
+    padding-top: 180px;
+
+  }
+
 }
 
-.column-layout{
+.column-layout {
   display: flex;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   flex-basis: 100%;
   width: 100%;
 }
-.profile{
+
+.profile {
   width: 100%;
 }
 
@@ -355,10 +412,10 @@ body{
 } */
 @media screen and (min-width: 2200px) {
 
-.primary-header{  
-  position: absolute;
-  margin-right:24vh!important;
-}
+  .primary-header {
+    position: absolute;
+    margin-right: 24vh !important;
+  }
 }
 
 
@@ -368,9 +425,9 @@ body{
     padding: 0 5%;
   }
 
-.content-container {
-  padding-inline: 14em;
-}
+  .content-container {
+    padding-inline: 14em;
+  }
 
 }
 
@@ -378,9 +435,10 @@ body{
   .container {
     padding: 0 3%;
   }
-  .rgt{
+
+  .rgt {
     height: 20vh !important;
-}
+  }
 
 
 }
@@ -389,3 +447,161 @@ body{
 
 
 
+/* ------------ */
+/* Reset        */
+/* ------------ */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box Sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset Margins*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion:reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------ */
+/* Container Classes */
+/* ------------ */
+
+/* Set up the body */
+#app {
+  display: flex;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 18px !important;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+/* select everything with a sibling prior */
+.flow>*:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+  outline: 1px solid red;
+}
+
+.container {
+  min-width: 100%;
+  padding: 0 2.5em;
+}
+
+.content-container {
+  padding-inline: 5em;
+}
+
+.marquee {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100;
+  line-height: 1.5em;
+  align-items: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2em repeat(1, minmax(0, 80rem)) 2em;
+}
+
+.grid-container>*:first-child {
+  grid-column: 2;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}
+
+.box {
+  color: #000;
+  background-color: lightblue;
+  padding: 3rem;
+}
+
+nav {
+  height: 5em;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.marquee span:nth-last-child(1) {
+  background: red;
+}
