@@ -189,7 +189,7 @@ import Footer from '../components/TheFooter.vue';
                 excel in designing emails that look great on all devices, even handling the challenges of Outlook.
               </p>
             </div>
-            <div class="col"><img src="src/assets/images/myPortfolioPic.jpeg" alt="" class="profile"></div>
+            <div class="col"><img src="../assets/images/myPortfolioPic.jpeg" alt="" class="profile"></div>
           </div>
         </section>
         <!-- End About section -->
